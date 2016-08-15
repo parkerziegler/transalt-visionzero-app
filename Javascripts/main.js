@@ -51,7 +51,7 @@
         var map = new L.map('map', locationOptions);
         
         // add a basemap to the 'map' element that was just instantiated
-        L.tileLayer('https://a.tiles.mapbox.com/v4/mapbox.dark/{z}/{x}/{y}.png?access_token={token}', {
+        L.tileLayer('https://{s}.tiles.mapbox.com/v4/mapbox.dark/{z}/{x}/{y}.png?access_token={token}', {
             attribution: 'Mapbox',
             subdomains: ['a','b','c','d'],
             token: 'pk.eyJ1IjoicHppZWdsZXIiLCJhIjoiY2ltMHo3OGRxMDh0MXR5a3JrdHNqaGQ0bSJ9.KAFBMeyysBLz4Ty-ltXVQQ'
@@ -113,7 +113,7 @@
         
         // create the layers and wire them to click events
         
-        cartodb.createLayer(map, layerSource, {legends: true})
+        cartodb.createLayer(map, layerSource, {legends: true, https: true})
         .addTo(map)
         .done(function(layer){
             
@@ -199,7 +199,7 @@
         });
         
         // show the heat map on load
-        cartodb.createLayer(map, torqueSource, {legends: true})
+        cartodb.createLayer(map, torqueSource, {legends: true, https: true})
             .addTo(map)
             .done(function(layer){
             
