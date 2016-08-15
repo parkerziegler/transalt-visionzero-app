@@ -25,7 +25,8 @@
                 options: {
                   user_name: 'transaltsummer2016',
                   table_name: crashTable,
-                  cartocss: $("#torque").text()
+                  cartocss: $("#torque").text(),
+                  https: true
                 }
               }
         
@@ -37,6 +38,7 @@
                 sql: "SELECT * FROM " + comdistTable,
                 cartocss: "",
                 interactivity: "cartodb_id"
+                https: true
             }]  
         }
         
