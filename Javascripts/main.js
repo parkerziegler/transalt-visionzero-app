@@ -53,7 +53,7 @@
         var map = new L.map('map', locationOptions);
         
         // add a basemap to the 'map' element that was just instantiated
-        L.tileLayer('https://a.tiles.mapbox.com/v4/mapbox.dark/{z}/{x}/{y}.png?access_token={token}', {
+        L.tileLayer('https://{s}.tiles.mapbox.com/v4/mapbox.dark/{z}/{x}/{y}.png?access_token={token}', {
             attribution: 'Mapbox',
             subdomains: ['a','b','c','d'],
             token: 'pk.eyJ1IjoicHppZWdsZXIiLCJhIjoiY2ltMHo3OGRxMDh0MXR5a3JrdHNqaGQ0bSJ9.KAFBMeyysBLz4Ty-ltXVQQ'
