@@ -25,8 +25,7 @@
                 options: {
                   user_name: 'transaltsummer2016',
                   table_name: crashTable,
-                  cartocss: $("#torque").text(),
-                  https: true
+                  cartocss: $("#torque").text()
                 }
               }
         
@@ -37,8 +36,7 @@
             sublayers: [{
                 sql: "SELECT * FROM " + comdistTable,
                 cartocss: "",
-                interactivity: "cartodb_id",
-                https: true
+                interactivity: "cartodb_id"
             }]  
         }
         
@@ -115,7 +113,7 @@
         
         // create the layers and wire them to click events
         
-        cartodb.createLayer(map, layerSource, {legends: true})
+        cartodb.createLayer(map, layerSource, {legends: true, https: true})
         .addTo(map)
         .done(function(layer){
             
@@ -201,7 +199,7 @@
         });
         
         // show the heat map on load
-        cartodb.createLayer(map, torqueSource, {legends: true})
+        cartodb.createLayer(map, torqueSource, {legends: true, https: true})
             .addTo(map)
             .done(function(layer){
             
