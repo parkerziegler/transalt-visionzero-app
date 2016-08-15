@@ -37,7 +37,7 @@
             sublayers: [{
                 sql: "SELECT * FROM " + comdistTable,
                 cartocss: "",
-                interactivity: "cartodb_id"
+                interactivity: "cartodb_id",
                 https: true
             }]  
         }
