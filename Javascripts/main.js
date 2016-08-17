@@ -113,7 +113,7 @@
         
         // create the layers and wire them to click events
         
-        cartodb.createLayer(map, layerSource, {legends: true})
+        cartodb.createLayer(map, layerSource, {legends: true, https: true})
         .addTo(map)
         .done(function(layer){
             
