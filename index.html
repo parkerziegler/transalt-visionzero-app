@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="https://cartodb.com/assets/favicon.ico" />
     
     <!-- CSS styles for the web page -->
-    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="src/css/styles.css" />
     <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
       
     <!-- CartoCSS for the heat map visualization -->
@@ -225,15 +225,15 @@
     <!-- load the necessary scripts -->
     <script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
     <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    <script src="Javascripts/leaflet.label.js" type="text/javascript"></script>
-    <script src="Javascripts/main.js" type="text/javascript"></script>
-    <script src="Javascripts/ccds.js" type="text/javascript"></script>
-    <script src="Javascripts/boroughs_crash_proportions.js" type="text/javascript"></script>
-    <script src="Javascripts/bronx_crash_proportions.js" type="text/javascript"></script>
-    <script src="Javascripts/brooklyn_crash_proportions.js" type="text/javascript"></script>
-    <script src="Javascripts/manhattan_crash_proportions.js" type="text/javascript"></script>
-    <script src="Javascripts/queens_crash_proportions.js" type="text/javascript"></script>
-    <script src="Javascripts/staten_island_crash_proportions.js" type="text/javascript"></script>
+    <script src="src/js/leaflet.label.js" type="text/javascript"></script>
+    <script src="src/js/main.js" type="text/javascript"></script>
+    <script src="src/js/ccds.js" type="text/javascript"></script>
+    <script src="src/js/boroughs_crash_proportions.js" type="text/javascript"></script>
+    <script src="src/js/bronx_crash_proportions.js" type="text/javascript"></script>
+    <script src="src/js/brooklyn_crash_proportions.js" type="text/javascript"></script>
+    <script src="src/js/manhattan_crash_proportions.js" type="text/javascript"></script>
+    <script src="src/js/queens_crash_proportions.js" type="text/javascript"></script>
+    <script src="src/js/staten_island_crash_proportions.js" type="text/javascript"></script>
     
     <!-- scripts for the legends -->
     <script type='html' id="area_legend" class="legend_template">
@@ -414,11 +414,11 @@
         <p id="about-text"><b>The Road to Vision Zero: Traffic Crashes and Poverty in New York City</b> is an interactive web application designed to help users visualize spatial and statistical relationships between traffic crashes and poverty in NYC. Use the dropdown menus to view different variables across the city or zoom to a specific borough. As you do, notice the scatterplot change to reflect the relationship between the selected variable and the crash density and notice the bar chart change to display crash densities of specific city council districts. <br/><br/> Data for this project comes from <a href="https://www.transalt.org/" style="color:#35C1E3;">Transportation Alternatives</a>, <a href="https://nycopendata.socrata.com/" style="color:#35C1E3;">NYC Open Data</a>, and the <a href="https://www.census.gov/programs-surveys/acs/" style="color:#35C1E3;">U.S. Census Bureau's American Community Survey</a>. Development and design by <a href="http://parkerziegler.com/" style="color:#35C1E3;">Parker Ziegler</a>, <a href="https://www.azavea.com/" style="color:#35C1E3;">Azavea</a>.</p>
     </div>
     <div id="photo">
-        <a href = "https://www.transalt.org/" target="_blank">
-            <img class="logo" src="Logos/TransAlt.png"/>
+        <a href="https://www.transalt.org/" target="_blank" rel="noopener noreferrer">
+            <img class="logo" src="public/trans-alt.png"/>
         </a>
-        <a href = "https://www.azavea.com/" target="_blank">
-            <img class="logo" src="Logos/Azavea.png"/>
+        <a href="https://www.azavea.com/" target="_blank" rel="noopener noreferrer">
+            <img class="logo" src="public/azavea.png"/>
         </a>
     </div>
     <div id="circle-title">
